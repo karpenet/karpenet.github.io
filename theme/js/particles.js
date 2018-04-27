@@ -20,14 +20,14 @@ var pJS = function(tag_id, params){
     },
     particles: {
       number: {
-        value: 400,
+        value: 180,
         density: {
           enable: true,
           value_area: 800
         }
       },
       color: {
-        value: '#fff'
+        value: '#ffc200"'
       },
       shape: {
         type: 'circle',
@@ -67,7 +67,7 @@ var pJS = function(tag_id, params){
       line_linked: {
         enable: true,
         distance: 100,
-        color: '#fff',
+        color: '#ffc200"',
         opacity: 1,
         width: 1
       },
@@ -91,7 +91,7 @@ var pJS = function(tag_id, params){
       detect_on: 'canvas',
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: 'grab'
         },
         onclick: {
