@@ -32,9 +32,12 @@
         padding: 4em 4em 0 0;
         top: 0;
         width: 35%;
-    }
-    .header{
-        position: relative;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        position: fixed;
+        
     }
 
 
