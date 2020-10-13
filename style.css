@@ -217,7 +217,7 @@ pre {
     color: #2c2c2c;
     font-size: 21px;
     text-align: left;
-    width: 90%;
+    width: 100%;
 }
 .site-tagline a,
 .site-tagline a:visited { color: #90D4C5; }
@@ -888,6 +888,7 @@ nav[role="navigation"] {
     display: block;
     z-index: 1;
     position: absolute;
+    overflow: hidden;
     left: 0;
     top: 0;
     width: 100%;
@@ -920,11 +921,11 @@ nav[role="navigation"] {
     color: #000000;
 }
 .blog_item:hover .abs_bg {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=50);
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
-    opacity: 0.5;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
 }
 .blog_item h1 {
     overflow: hidden;
@@ -1428,7 +1429,6 @@ nav[role="navigation"] {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  cursor: crosshair;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
