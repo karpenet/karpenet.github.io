@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
         percentPosition: true,
         masonry: {
             // use element for option
-            columnWidth: '.grid-sizer'
+            columnWidth: '.grid-sizer',
         }
     });
 
@@ -39,9 +39,11 @@ jQuery(document).ready(function($){
     });
 
     $('.img-container').magnificPopup({
+
         delegate: 'a',
         type: 'image',
         tLoading: 'Loading image #%curr%...',
+        closeOnContentClick: true,
         mainClass: 'mfp-img-mobile',
         gallery: {
             enabled: true,
@@ -62,7 +64,6 @@ jQuery(document).ready(function($){
             }
         }
     });
-
 });
 
 
