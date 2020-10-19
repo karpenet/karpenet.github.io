@@ -599,6 +599,11 @@ pre {
     width: 100%;
     text-align: left;
 }
+
+.table ul {
+    margin: 0 0 !important;
+}
+
 .table-cell {
     display: table-cell;
     height: 100%;
@@ -978,7 +983,7 @@ nav[role="navigation"] {
   margin-left: 60px;
 }
 .row {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .site-content {
     clear: both;
@@ -1162,7 +1167,7 @@ nav[role="navigation"] {
         padding: 80px;
     }
     .row {
-        margin-top: 80px;
+        margin-top: 0px;
     }
     /*===== Titles =====*/
     .site-title {
@@ -1304,7 +1309,7 @@ nav[role="navigation"] {
         padding: 100px 200px;
     }
     .row {
-        margin-top: 120px;
+        margin-top: 0px;
     }
     /*===== Titles =====*/
     .site-title {

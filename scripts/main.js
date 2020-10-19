@@ -64,6 +64,15 @@ jQuery(document).ready(function($){
             }
         }
     });
+
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
 });
 
 

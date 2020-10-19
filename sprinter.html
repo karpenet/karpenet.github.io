@@ -67,11 +67,28 @@
 
             <div class="page-desc">
                 <h1>SPRINTER: A Discrete Locomotion Robot for Precision Swarm Printing</h1>
-                <p><strong> JULY 2015</strong> ||| <strong>Skills:</strong> <i>Branding, Graphic Design, Website</i> ||| <strong>URL:</strong> <a href="#0"><i>Aristotheme</i></a></p>
             
                 <article class="project">
-                    <h5>Problem Statement:</h5>
-                    <p>lroem ipsum</p>
+                    <h5>Introduction:</h5>
+                    <p>In this work, we consider the problem of large-format printing using a group of homogenous mobile robots. We approach this problem using an optimization method which decomposes an image into rasterized geodesic cells and allocates them to the robot team for printing.</p>
+                    <figure>
+                        <img src="img/sprinter/arch.png" align="middle" width="50%" alt="" />
+                        <figcaption><small>Fig: Proposed system architechture of distributed printing.</small></figcaption>
+                    </figure>
+                    <h5>Problem Definition:</h5>
+                    <p>The aim is to minimize the total printing cost, which is the maximum cost amongst all robots:\begin{equation}\text{minimize} \max (T_1, T_2, T_3, ..., T_\mathcal{N})\end{equation}
+                    </p>
+
+                    <h5>The Geodesic Image Cellularization Algorithm:</h5>
+                    <p>$$\begin{align}\underset{\mu, W}{\text{minimize}} \quad & \sum_{m=1}^{\mathcal{M}} \sum_{n=1}^{\mathcal{N}} W_{mn}(\frac{1}{2} \|\mathrm{x}_m - \mu_n\|^{2}_{2}) \label{eqn:cnst1}\\ \textrm{subject to} \quad & \sum_{n=1}^{\mathcal{N}} W_{mn} = 1 , m = 1, ..., \mathcal{M} \label{eqn:cnst2}\\ & W_{mn} \geq 0, m = 1, ..., \mathcal{M}; n = 1, ..., \mathcal{N} \label{eqn:cnst3}\\ & \sum_{m=1}^{\mathcal{M}} W_{mn} \geq \left \lfloor \frac{\mathcal{M}}{\mathcal{N}} \right \rfloor , n = 1, ..., \mathcal{N} \label{eqn:cnst4} \end{align}$$</p>
+
+                    <h5>Robot Design:</h5>
+                    <figure>
+                        <img src="img/sprinter/exploded.png" align=”right” width="50%" alt="" />
+                        <figcaption><small>Fig: Exploded view of the SPRINTER robot.</small></figcaption>
+                    </figure>
+
+                    <h5>Experiments:</h5>
 
                     <div class="container-fluid">
                         <div class="row">
@@ -89,20 +106,23 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <h5>Publications:</h5>
+                    <ol>
+                        <li><a href="https://doi.org/10.1109/ICAR46387.2019.8981621" target="_blank">Karpe, K., Chatterjee, A., Srinivas, P., Samiappan, D., Ramamoorthy, K., Sabattini, L.: Sprinter: A discrete locomotion robot for precision swarm printing. In: 2019 19th International Conference on Advanced Robotics (ICAR), pp. 733–738. IEEE (2019)</a></li>
+                        <li><a href="">Karpe, K., Sinha, A., Raorane, S. Chatterjee, A., Srinivas, P., Sabattini, L.: Towards Optimized Distributed Multi-Robot Printing: An Algorithmic Approach</a></li>
+                    </ol>
 
-
-                    <figure>
-                        <img src="img/sprinter/exploded.png" align=”left” width="50%" alt="" />
-                        <figcaption><small>Fig: Exploded view of the SPRINTER robot.</small></figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/sprinter/arch.png" align=”left” width="50%" alt="" />
-                        <figcaption><small>Fig: Proposed system architechture of distributed printing.</small></figcaption>
-                    </figure>
-
-
-                    <h5>The Geodesic Image Cellularization Algorithm:</h5>
-                    <p></p>
+                    <h5>Codebase:</h5>
+                    <ol>
+                        <li><a href="https://github.com/beeclust-mrsl/SPRINTER-Hardware" target="_blank">https://github.com/beeclust-mrsl/SPRINTER-Hardware</a></li>
+                    </ol>
+                    <ol>
+                        <li><a href="https://github.com/beeclust-mrsl/SPRINTER-Firmware" target="_blank">https://github.com/beeclust-mrsl/SPRINTER-Firmware</a></li>
+                    </ol>
+                    <ol>
+                        <li><a href="https://github.com/beeclust-mrsl/SPRINTER-Utilities" target="_blank">https://github.com/beeclust-mrsl/SPRINTER-Utilities</a></li>
+                    </ol>
                 </article>
             </div>
         <!--END .site-content-->
@@ -146,6 +166,8 @@
 
     <script src="scripts/popper.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+
+    <script id="MathJax-script" async src= "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
  
 
 </body>

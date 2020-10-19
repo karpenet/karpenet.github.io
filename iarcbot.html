@@ -67,130 +67,73 @@
 
             <div class="page-desc">
                 <h1>IARCBot: An Advanced Line, Wall, Color Tracking Robot</h1>
-                <p><strong> Feb 2018</strong> ||| <strong>Skills:</strong> <i>Branding, Graphic Design, Website</i></p>
+                <article class="project">
             
-            
-                <h5>Problem Statement:</h5>
-                <p>Design a fully autonomous robot to follow a black/white line on a white/black surface and then follow a rigid wall either on the left, right or both sides. While following a line, avoid blue colored obstacles by circumventing them from the left and avoid red colored obstacles by circumventing them from the right.</p>
+                    <h5>Problem Statement:</h5>
+                    <p>Design a fully autonomous robot to follow a black/white line on a white/black surface and then follow a rigid wall either on the left, right or both sides. While following a line, avoid blue colored obstacles by circumventing them from the left and avoid red colored obstacles by circumventing them from the right.</p>
 
-                <h5>Design Parameters:</h5>
-
-
-                <table class="table">
-                                                    <tbody>
-
-                                                        <tr>
-                                                            <th scope="row">Compute</th>
-                                                            <td>
-                                                                <ul>
-                                                                    <li>Intel NUC Core i7-5557U</li>
-                                                                    <li>Pixhawk FMU v2</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">Sensors</th>
-                                                            <td>
-                                                                <ul>
-                                                                    <li>Velodyne VLP16 Puck LITE</li>
-                                                                    <li>VectorNav VN-100 IMU </li>
-                                                                    <li>Garmin Lidar-Lite</li>
-                                                                    <li>3x Point Grey Chameleon3</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Communication Link</th>
-                                                            <td>
-                                                                Ubiquity Picostation M2
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">Propulsion System</th>
-                                                            <td>
-                                                                DJI E600 tuned propulsion system
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">Power</th>
-                                                            <td>
-                                                                <ul>
-                                                                    <li>6S 4500 mAh LiPo Battery</li>
-                                                                    <li>Custom Power Distribution Board</li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">Dimensions</th>
-                                                            <td>450mm diagonal motor-motor</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row"> All up Weight</th>
-                                                            <td>3404g</td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
+                    <h5>Design Parameters:</h5>
 
 
-                <h5>Project Code:</h5>
-                <p><a href="https://github.com/karpenet/IARCbot">https://github.com/karpenet/IARCbot</a></p>
-                <figure>
-                    <img src="img/iarc/init-iarc.jpg" align=”left” width="50%" alt="" />
-                    <figcaption><small>Fig.1 - Trulli, Puglia, Italy.</small></figcaption>
-                </figure>
-                
-                <figure>
-                    <img src="img/iarc/final-iarc.jpg" align=”left” width="50%" alt="" />
-                    <figcaption><small>Fig.1 - Trulli, Puglia, Italy.</small></figcaption>
-                </figure>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Compute</th>
+                                <td>
+                                    <ul>
+                                        <li>Arduino Mega 2560</li>
+                                    </ul>
+                                </td>
+                            </tr>
 
-            <article class="project">
+                            <tr>
+                                <th scope="row">Sensors</th>
+                                <td>
+                                    <ul>
+                                        <li>1x TCRT 5000, 5 Sensor Main Array</li>
+                                        <li>1x TCRT 5000, 3 Sensor Aux Array</li>
+                                        <li>3x HC-SR04 Ultrasonic Sensors</li>
+                                        <li>1x TCS3200 RGB Color Sensor</li>
+                                        <li>1x MPU6050 6-DOF IMU</li>
+                                    </ul>
+                                </td>
+                            </tr>
 
-                <div class="project-assets">
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/item-1.jpg"></div>
-                            <div data-src="img/item-1.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/item-1.jpg"></div>
-                            <![endif]-->
-                            <noscript>
-                                <img src="img/item-1.jpg" alt="" />
-                            </noscript>
+                            <tr>
+                                <th scope="row">Power</th>
+                                <td>
+                                    <ul>
+                                        <li>3S 2000 mAh Li-Ion Battery</li>
+                                        <li>Custom Power Distribution and User Interface Board</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <figure>
+                                    <img src="img/iarc/init-iarc.jpg" align=”left” alt="" />
+                                    <figcaption><small>Fig: Custom lasered acrylic chassis of the IARCbot.</small></figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <figure>
+                                    <img src="img/iarc/final-iarc.jpg" align=”right” alt="" />
+                                    <figcaption><small>Fig: Fully assembled robot.</small></figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/item-2.jpg"></div>
-                            <div data-src="img/item-2.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/item-2.jpg"></div>
-                            <![endif]-->
-                            <noscript>
-                                <img src="img/item-2.jpg" alt="" />
-                            </noscript>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/item-3.jpg"></div>
-                            <div data-src="img/item-3.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/item-3.jpg"></div>
-                            <![endif]-->
-                            <noscript>
-                                <img src="img/item-3.jpg" alt="" />
-                            </noscript>
-                        </div>
-                    </div>
-                </div>         
-            </article>
+                    <h5>Project Code:</h5>
+                    <figure>
+                            <img src="img/iarc/line-iarc.gif" align="middle" width="100%" alt="" />
+                            <figcaption><small>Fig: IARCbot in action at Techkriti 2018, IIT Kanpur.</small></figcaption>
+                    </figure>
+                    <p><a href="https://github.com/karpenet/IARCbot" target="_blank">https://github.com/karpenet/IARCbot</a></p>
+                </article>
             </div>
    
         <!--END .site-content-->
