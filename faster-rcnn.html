@@ -69,35 +69,84 @@
                 <h1>Faster-RCNN: Towards Real-Time Object Detection with Region Proposal Networks</h1>
             
                 <article class="project">
+                    <h5>Github Repository:</h5>
+                    <p><a href="https://github.com/kedarkarpe/Faster-RCNN" target="_blank">https://github.com/kedarkarpe/Faster-RCNN</a></p>
+
                     <h5>Introduction:</h5>
-                    <p>In this project we will implement some of the components of MaskRCNN, an algorithm that addresses the task of instance segmentation, which combines object detection and semantic segmentation into a per-pixel object detection framework.</p>
+                    <p>In this project we will implement some of the components of MaskRCNN, an algorithm that addresses the task of instance segmentation, which combines object detection and semantic segmentation into a per-pixel object detection framework.
+
+                    The full implementation of Faster-RCNN would take many days to train, so we will implement a simpler version of the Region Proposal Network that keeps all the necessary components. However, these simplifications affect the performance of the algorithm. In the second parts of the project, we will use pretrained parts to boost the performance.
+                    </p>
 
                     <figure>
-                        <img src="img/faster-rcnn/obj-det.png" align="middle" width="50%" alt="" />
+                        <img src="img/faster-rcnn/obj-det.png" align="middle" width="100%" alt="" />
                         <figcaption><small>Fig: Object Detection - State of the Art.</small></figcaption>
                     </figure>
 
-                    <h5>Region Proposal Networks:</h5>
-                    <p>Region Proposal Networks (RPNs) are ”attention mechanisms” for the object detection task, performing a crude but inexpensive first estimation of where the bounding boxes of the objects should be. They were first proposed as a way to address the issue of expensive greedy algorithms like Selective Search, opening new avenues to end-to-end object detection tasks. They work through classifying the initial anchor boxes into object/background and refine the coordinates for the boxes with objects. Later, these boxes will be further refined and tightened by the instance segmentation heads as well as classified in their corresponding classes. 
-
                     <h5>Model Architecture:</h5>
-                    The architecture for the RPN and the later refinement of the proposals is shown below:</p>
+                    The architecture for the RPN and the later refinement of the proposals is shown below:
                     <figure>
                         <img src="img/faster-rcnn/arch.png" align="middle" width="100%" alt="" />
                         <figcaption><small>Fig: Model Architecture.</small></figcaption>
                     </figure>
 
-                    <h5>Implementation:</h5>
+                    <h5>Part 1 - Region Proposal Networks:</h5>
+                    <p>Region Proposal Networks (RPNs) are ”attention mechanisms” for the object detection task, performing a crude but inexpensive first estimation of where the bounding boxes of the objects should be. They were first proposed as a way to address the issue of expensive greedy algorithms like Selective Search, opening new avenues to end-to-end object detection tasks. They work through classifying the initial anchor boxes into object/background and refine the coordinates for the boxes with objects. Later, these boxes will be further refined and tightened by the instance segmentation heads as well as classified in their corresponding classes.</p>
+
                     <figure>
-                        <img src="img/faster-rcnn/yolo_arch.png" align="middle" width="50%" alt="" />
-                        <figcaption><small>Fig: Implementation architecture of the code.</small></figcaption>
+                        <img src="img/faster-rcnn/rpn-arch.png" align="middle" width="100%" alt="" />
+                        <figcaption><small>Fig: Architecture of the Region Proposal Network.</small></figcaption>
                     </figure>
 
-                    <h5>Results:</h5>
+                    <br><h6>1. Ground Truth Creation</h6>
+
                     <figure>
-                        <img src="img/faster-rcnn/yolo_pred.png" align="middle" width="50%" alt="" />
-                        <figcaption><small>Fig: Original and Predicted bounding boxes by the model.</small></figcaption>
+                        <img src="img/faster-rcnn/gt-prop.png" align="middle" width="100%" alt="" />
+                        <figcaption><small>Fig: Ground Truth Proposal Regions.</small></figcaption>
                     </figure>
+                    <figure>
+                        <img src="img/faster-rcnn/top-20.png" align="middle" width="100%" alt="" />
+                        <figcaption><small>Fig: Top 20 Ground Truth proposals.</small></figcaption>
+                    </figure>
+
+                    <br><h6>2. Training and Loss Plots</h6>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <figure>
+                                    <img src="img/faster-rcnn/trainloss.png" align=”left” alt="" />
+                                    <figcaption><small>Fig: Fire test of the inkjet cartridge driver.</small></figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <figure>
+                                    <img src="img/faster-rcnn/classloss.png" align=middle alt="" />
+                                    <figcaption><small>Fig: First power-on test of the robot.</small></figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <figure>
+                                    <img src="img/faster-rcnn/regloss.png" align=”right” alt="" />
+                                    <figcaption><small>Fig: First power-on test of the robot.</small></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><h6>3. Predicted Outputs</h6>
+
+                    <figure>
+                        <img src="img/faster-rcnn/pre-nms.png" align="middle" width="100%" alt="" />
+                        <figcaption><small>Fig: Pre-NMS Predicted Proposals.</small></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/faster-rcnn/nms.png" align="middle" width="100%" alt="" />
+                        <figcaption><small>Fig: Post-NMS Predicted Proposals.</small></figcaption>
+                    </figure>
+
+                    <h5>Part 2 - Object Detection:</h5>
+                    <h6>Hi</h6>
                     
                     <h5>References:</h5>
                     <ol>
