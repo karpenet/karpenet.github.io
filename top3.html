@@ -57,11 +57,44 @@
         </header><!-- / .site-header -->
 
         <section class="site-content">
-
             <div class="page-desc">
                 <h1>Top 3 Things!</h1>
                 <article class="project">
-                    <zero-md src="top3.md"></zero-md>
+                    <zero-md src="top3.md" theme="light">
+                        <template data-append>
+                            <style>
+                                .markdown-body {
+                                    background-color: #ffffff;
+                                    color: #000000;
+                                }
+
+                                .markdown-body table {
+                                    border: #ffffff;
+                                    border-color: #ffffff;
+                                }
+
+                                .markdown-body table tr {
+                                    background-color: #ffffff;
+                                    border-color: #ffffff;
+                                    border: #ffffff;
+                                }
+
+                                .markdown-body table td {
+                                    border: 1px solid #ffffff;
+                                }
+
+                                .markdown-body table tr {
+                                    border: 1px solid #ffffff;
+                                }
+
+                                .markdown-body table th {
+                                    border: 1px solid #ffffff;
+                                    border-bottom: 1px solid #000000;
+                                }
+
+                            </style>
+                        </template>
+                    </zero-md>
                 </article>
             </div>
         <!--END .site-content-->
