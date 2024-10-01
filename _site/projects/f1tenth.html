@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KARPE/DIEM/</title>
+ 
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+
+    <script src="../scripts/modernizr.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V2SBP59EE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7V2SBP59EE');
+</script>
+</head>
+
+<body>
+    <div id="cd-nav" class="cd-nav">
+        <div class="cd-navigation-wrapper">
+            <div class="cd-half-block">
+                <nav>
+                    <ul class="cd-primary-nav">
+                        <li><a href="../index.html" class="selected">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../photography.html">Photography</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- .cd-half-block -->
+        </div> <!-- .cd-navigation-wrapper -->
+    </div> <!-- .cd-nav -->
+
+    <div class="site-container">
+
+        <header class="site-header cf">
+            <div class="site-title"><a href="../index.html">KARPE/DIEM/</a></div>
+            <div class="cf"></div>
+        </header><!-- / .site-header -->
+
+        <section class="site-content">
+            <div class="page-desc">
+                <h1>F1/10</h1>
+                <article class="project markdown-body">
+                    <p>I will be writing about my learnings from and beyond the ESE 615: F1/10 Autonomous Racing course offered in Spring 2022.&lt;/a&gt;</p>
+
+<h2 id="my-team-won-at-icra-2022">My Team Won at ICRA 2022!!</h2>
+<p>Little did we know at the beginning of this course that our team will win at the International Conference of Robotics and Automation, Philadelphia - 2022!</p>
+
+<p>Our team beat the teams from the best universities around the world and also the three time champion at F1Tenth. Great job guys!</p>
+<figure>
+    <img src="../img/f1-tenth/icra.png" align="middle" width="50%" alt="" />
+    <figcaption><small>My team at ICRA 2022.</small></figcaption>
+</figure>
+
+<h1 id="module-i-reactive-methods">Module I: Reactive Methods</h1>
+
+<h2 id="wall-following">Wall Following:</h2>
+<iframe src="https://www.youtube.com/embed/vA0JITsma-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="disparity-extender">Disparity Extender:</h2>
+<iframe src="https://www.youtube.com/embed/Wl7HnYWEY44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h2 id="artificial-potential-fields">Artificial Potential Fields:</h2>
+
+<h2 id="race-1">Race 1</h2>
+
+<h3 id="problem-statement">Problem Statement</h3>
+<p>Loop 2 laps around Levine Hall using a reactive algorithm like wall follow or a follow the gap.</p>
+
+<h3 id="approach">Approach</h3>
+<p>We used a combination of artificial potential fields and cubic splines to plan a follow the gap approach to go around the Levine Hall lobby.</p>
+
+<h3 id="race-strategy">Race Strategy</h3>
+<p>We quickly realized that the controller response for the straight strech and the corners had to be starkly different, thus we developed a piecewise PID Control algorithm which would switch between two different tuning paramters based on the straight distance from the f1tenth car.</p>
+
+<h3 id="code">Code</h3>
+<li>
+    <a href="https://github.com/karpenet/Reactive-Methods-for-Autonomous-Racing" target="_blank">https://github.com/karpenet/Reactive-Methods-for-Autonomous-Racing</a>
+</li>
+
+<figure>
+    <img src="../img/f1-tenth/race1-fpv.gif" align="middle" width="100%" alt="" />
+    <figcaption><small>Best friend gifted me an action cam on my birthday! Finally was able to pull this FPV video off the actual car.</small></figcaption>
+</figure>
+
+<p><strong>WE STOOD 3RD IN THE RACE!</strong></p>
+
+<h1 id="module-ii-map-based-methods">Module II: Map Based Methods</h1>
+<h1 id="module-iii-race-optimization">Module III: Race Optimization!</h1>
+
+<h2 id="race-3">Race 3</h2>
+
+<h3 id="problem-statement-1">Problem Statement</h3>
+<p>Complete fastest 10 laps at Skirkanich Hall Loop whicle racing an opponent’s car.</p>
+
+<h3 id="approach-1">Approach</h3>
+<p>We used an MPC based controlled but quickly realised the lack of compute causing the car’s action to lag. We quickly switched gears to a simple pure pursuit controller strategy while avoiding opponent using a virtual lane.</p>
+
+<h3 id="race-strategy-1">Race Strategy</h3>
+<p>Tuning Tuning Tuning!
+Tuned the best trajectory and controller gains to get maximum momentum approach where the car slowly began to drift at corners and turned without braking.</p>
+
+<figure>
+    <img src="../img/f1-tenth/race3-fpv.gif" align="middle" width="100%" alt="" />
+    <figcaption><small>Best friend gifted me an action cam on my birthday! Finally was able to pull this FPV video off the actual car.</small></figcaption>
+</figure>
+
+<p><strong>WE STOOD 1ST IN THE RACE!</strong></p>
+
+                </article>
+            </div>
+        <!--END .site-content-->
+        </section>
+
+
+ 
+        <nav role="navigation">
+            <ul class="cd-pagination animated-buttons custom-icons">
+                <li class="button"><a href="#0"><i>Prev</i></a></li>
+                <li class="button-main"><a href="../index.html"><i>Portfolio</i></a></li>
+                <li class="button"><a href="#0"><i>Next</i></a></li>
+
+            </ul>
+        </nav> <!-- cd-pagination-wrapper -->
+ 
+
+        <footer class="site-footer cf">
+            <p class="footer-text">© Copyright 2020</p>
+            <nav class="social" role="navigation">
+                <a href="" class="fa fa-envelope"></a>
+                <a href="https://github.com/karpenet" target="_blank" class="fa fa-github"></a>
+                <a href="https://in.linkedin.com/in/kedar-karpe-640b18118" target="_blank" class="fa fa-linkedin"></a>
+            </nav>
+        </footer>
+
+
+    <!--END .site-container-->
+    </div>
+
+    <script src="../scripts/jquery-2.1.4.min.js"></script>
+    <script src="../scripts/jquery.fitvids.js"></script>
+    <script src="../scripts/jquery.imagesloaded.min.js"></script>
+    <script src="../scripts/imgloaded.js"></script>
+    <script src="../scripts/main.js"></script>  
+
+    <script src="../scripts/modernizr.js"></script>
+    <script src="../scripts/masonry.pkgd.min.js"></script>
+    <script src="../scripts/jquery.magnific-popup.min.js"></script>
+    <script src="../scripts/isotope.js"></script>
+
+    <script src="../scripts/popper.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+
+    <script id="MathJax-script" async src= "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ 
+
+</body>
+</html>

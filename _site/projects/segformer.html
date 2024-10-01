@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KARPE/DIEM/</title>
+ 
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+
+    <script src="../scripts/modernizr.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7V2SBP59EE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7V2SBP59EE');
+</script>
+</head>
+
+<body>
+    <div id="cd-nav" class="cd-nav">
+        <div class="cd-navigation-wrapper">
+            <div class="cd-half-block">
+                <nav>
+                    <ul class="cd-primary-nav">
+                        <li><a href="../index.html" class="selected">Home</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../photography.html">Photography</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!-- .cd-half-block -->
+        </div> <!-- .cd-navigation-wrapper -->
+    </div> <!-- .cd-nav -->
+
+    <div class="site-container">
+
+        <header class="site-header cf">
+            <div class="site-title"><a href="../index.html">KARPE/DIEM/</a></div>
+            <div class="cf"></div>
+        </header><!-- / .site-header -->
+
+        <section class="site-content">
+            <div class="page-desc">
+                <h1>Segformer</h1>
+                <article class="project markdown-body">
+                    <h2 id="building-the-segformer-model-architecture">Building the SegFormer Model Architecture</h2>
+<p>Instead of using a pre-built model, I decided to implement the SegFormer architecture from scratch to gain a deeper understanding of its inner workings. Here’s a brief outline of the architecture:</p>
+
+<ol>
+  <li>Backbone (Transformer Encoder): The core of SegFormer is based on a transformer encoder that processes image patches. The input image is split into patches, each of which is embedded and passed through the transformer layers.</li>
+  <li>Multi-scale Features: The model extracts features at multiple scales, allowing it to capture both fine and coarse details within an image.</li>
+  <li>Lightweight Decoder: The output of the transformer is passed through a lightweight decoder that up-samples the features to generate the final segmentation mask.</li>
+</ol>
+
+<iframe src="https://wandb.ai/karpenet-uofpenn/Segformer-B0/reports/Segformer-B0-Training-Run--Vmlldzo5NTU4OTIw?accessToken=70zinxzi3m6f7qyktsj9zzk6rwdqdkti4xzdfu1c8c40qdx4u3bz6loq5uqsmgl9" style="border:none;height:1024px;width:100%">
+
+</iframe>
+
+                </article>
+            </div>
+        <!--END .site-content-->
+        </section>
+
+
+ 
+        <nav role="navigation">
+            <ul class="cd-pagination animated-buttons custom-icons">
+                <li class="button"><a href="#0"><i>Prev</i></a></li>
+                <li class="button-main"><a href="../index.html"><i>Portfolio</i></a></li>
+                <li class="button"><a href="#0"><i>Next</i></a></li>
+
+            </ul>
+        </nav> <!-- cd-pagination-wrapper -->
+ 
+
+        <footer class="site-footer cf">
+            <p class="footer-text">© Copyright 2020</p>
+            <nav class="social" role="navigation">
+                <a href="" class="fa fa-envelope"></a>
+                <a href="https://github.com/karpenet" target="_blank" class="fa fa-github"></a>
+                <a href="https://in.linkedin.com/in/kedar-karpe-640b18118" target="_blank" class="fa fa-linkedin"></a>
+            </nav>
+        </footer>
+
+
+    <!--END .site-container-->
+    </div>
+
+    <script src="../scripts/jquery-2.1.4.min.js"></script>
+    <script src="../scripts/jquery.fitvids.js"></script>
+    <script src="../scripts/jquery.imagesloaded.min.js"></script>
+    <script src="../scripts/imgloaded.js"></script>
+    <script src="../scripts/main.js"></script>  
+
+    <script src="../scripts/modernizr.js"></script>
+    <script src="../scripts/masonry.pkgd.min.js"></script>
+    <script src="../scripts/jquery.magnific-popup.min.js"></script>
+    <script src="../scripts/isotope.js"></script>
+
+    <script src="../scripts/popper.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+
+    <script id="MathJax-script" async src= "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ 
+
+</body>
+</html>

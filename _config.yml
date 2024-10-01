@@ -1,0 +1,4 @@
+name: KARPE//DIEM
+kramdown:
+  input: GFM
+  gfm_quirks: [paragraph_end]

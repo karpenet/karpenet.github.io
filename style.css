@@ -1534,3 +1534,62 @@ nav[role="navigation"] {
 .gutters .grid-item {
   margin-bottom: 30px;
 }
+
+/* Override GitHub Markdown CSS for light theme */
+.markdown-body {
+    background-color: #ffffff !important; /* Set background to white */
+    color: #24292e !important; /* Set text color to GitHub's default text color */
+}
+
+/* Ensure code blocks and other elements also use light theme colors */
+.markdown-body pre,
+.markdown-body code {
+    background-color: #f6f8fa !important; /* Light background for code blocks */
+    color: #24292e !important; /* Text color for code */
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    text-decoration: none !important; /* Remove text underline */
+    border-bottom: none !important; /* Remove any bottom border */
+}
+
+.markdown-body th:first-of-type {
+    width: 50%;
+}
+.markdown-body th:nth-of-type(2) {
+    width: 50%;
+}
+
+.markdown-body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.markdown-body table {
+    border: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.markdown-body table tr {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    border: #ffffff !important;
+}
+
+.markdown-body table td {
+    border: 1px solid #ffffff !important;
+}
+
+.markdown-body table tr {
+    border: 1px solid #ffffff !important;
+}
+
+.markdown-body table th {
+    border: 1px solid #ffffff !important;
+    border-bottom: 1px solid #000000 !important;
+}
