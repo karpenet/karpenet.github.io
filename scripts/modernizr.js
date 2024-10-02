@@ -62,7 +62,7 @@ window.Modernizr = function(a, b, c) {
             z = y.split(" "),
             A = y.toLowerCase().split(" "),
             B = {
-                svg: "http://www.w3.org/2000/svg"
+                svg: "https://www.w3.org/2000/svg"
             },
             C = {},
             D = {},

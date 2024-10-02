@@ -7,7 +7,7 @@ order: 3
 ---
 
 ## Introduction
-This project was inspired from the revered [DEF CON badges](https://www.defcon.org/html/links/dc-badge.html). The motivation was to build an ID card for the members of [Beeclust Multi-Robot Systems Lab](http://beeclust-mrsl.github.io), which could also double up as an arduino based learning tool for training members of the lab and serve as quick prototyping tool.
+This project was inspired from the revered [DEF CON badges](https://www.defcon.org/html/links/dc-badge.html). The motivation was to build an ID card for the members of [Beeclust Multi-Robot Systems Lab](https://beeclust-mrsl.github.io), which could also double up as an arduino based learning tool for training members of the lab and serve as quick prototyping tool.
 
 ![Image Description](../img/bee-id/bee-id.jpg)  |  ![Image Description](../img/bee-id/defcon.jpg)
 :-------------------------:|:-------------------------:

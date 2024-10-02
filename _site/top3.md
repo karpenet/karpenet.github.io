@@ -14,7 +14,7 @@ I built and led a team of over 30 multidisciplinary undergraduate students to de
 
 Along the way, we organized workshops to share knowledge, launched social initiatives, and recruited and trained new team members, ensuring the project continued to grow. We competed in robotics competitions worldwide, winning several of them, and published our research in leading robotics conferences like IROS 2019, SWARM 2021, and ICAR 2019. It was an incredible journey of innovation, teamwork, and impact!
 
-Check it out here: [Instagram](http://instagram.com/beeclust.mrsl/) | [Website](http://beeclust-mrsl.github.io) | [Project](https://karpenet.github.io/sprinter.html) | [Paper 1](https://ieeexplore.ieee.org/document/8981621) | [Paper 2](https://arxiv.org/abs/2102.12026)
+Check it out here: [Instagram](https://instagram.com/beeclust.mrsl/) | [Website](https://beeclust-mrsl.github.io) | [Project](https://karpenet.github.io/sprinter.html) | [Paper 1](https://ieeexplore.ieee.org/document/8981621) | [Paper 2](https://arxiv.org/abs/2102.12026)
 
 
 The Team!             |  SPRINTER Robot
