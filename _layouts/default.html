@@ -1,7 +1,3 @@
----
-layout: default
-refactor: true
----
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
@@ -80,7 +76,10 @@ refactor: true
                             <a href="{{page.path | replace:'.md','.html' }}" title={{ page.title }}>
                                 <div class="thumb">
                                     <div data-picture data-alt={{ page.order }}>
-                                        <div data-src={{ page.favicon }}></div>                                      
+                                        <div data-src={{ page.favicon }}></div>
+                                        <!--[if (lt IE 9) & (!IEMobile)]>
+                                            <div data-src="img/news-3.jpg"></div>
+                                        <![endif]-->                                      
                                         <noscript>
                                             <img src={{ page.favicon }} alt="" />
                                         </noscript>
