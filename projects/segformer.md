@@ -5,6 +5,8 @@ desc: Semantic Segmentation with Transformers
 favicon: "../img/segformer.gif"
 order: 9
 ---
+## Github Repository
+[https://github.com/karpenet/Segformer](https://github.com/karpenet/Segformer)
 
 ## Building the SegFormer Model Architecture
 Instead of using a pre-built model, I decided to implement the SegFormer architecture from scratch to gain a deeper understanding of its inner workings. Here’s a brief outline of the architecture:
@@ -46,8 +48,6 @@ The decoder in Segformer is lightweight and minimalistic. Instead of using a com
 
 
 <iframe src="https://wandb.ai/karpenet-uofpenn/Segformer-B0/reports/Segformer-B0-Training-Run--Vmlldzo5NTU4OTIw?accessToken=70zinxzi3m6f7qyktsj9zzk6rwdqdkti4xzdfu1c8c40qdx4u3bz6loq5uqsmgl9" style="border:none;height:1024px;width:100%"></iframe>
-
-<a href="https://github.com/karpenet" target="_blank" class="fa fa-github"></a>
 
 ## Segformer Training Pipeline
 

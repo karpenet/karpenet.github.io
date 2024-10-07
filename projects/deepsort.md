@@ -2,7 +2,7 @@
 layout: project
 title: Deepsort
 desc: Semantic Segmentation with Transformers
-favicon: "../img/segformer.jpg"
+favicon: "../img/deepsort.gif"
 order: 9
 ---
 

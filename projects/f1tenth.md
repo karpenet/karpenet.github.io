@@ -1,21 +1,21 @@
 ---
 layout: project
-title: F1/10
+title: F1TENTH
 desc: 1/10 Scale Autonomous Racing
 favicon: "../img/f1tenth.jpg"
 order: 6
 ---
 
-I will be writing about my learnings from and beyond the ESE 615: F1/10 Autonomous Racing course offered in Spring 2022.</a>
+I will be writing about my learnings from and beyond the ESE 615: F1/10 Autonomous Racing course offered in Spring 2022.
 
 ## My Team Won at ICRA 2022!!
 Little did we know at the beginning of this course that our team will win at the International Conference of Robotics and Automation, Philadelphia - 2022!
 
 Our team beat the teams from the best universities around the world and also the three time champion at F1Tenth. Great job guys!
-<figure>
+<div style="text-align:center">
     <img src="../img/f1-tenth/icra.png" align="middle" width="50%" alt="" />
     <figcaption><small>My team at ICRA 2022.</small></figcaption>
-</figure>
+</div>
 
 # Module I: Reactive Methods
 

@@ -62,40 +62,55 @@
 
         <section class="site-content">
             <div class="page-desc">
-                <h1>SPRINTER</h1>
+                <h1>SPRINTER: A Discrete Locomotion Robot for Precision Swarm Printing</h1>
                 <article class="project markdown-body">
                     <h2 id="introduction">Introduction</h2>
 <p>In this work, we consider the problem of large-format printing using a group of homogenous mobile robots. We approach this problem using an optimization method which decomposes an image into rasterized geodesic cells and allocates them to the robot team for printing.</p>
 
-<p><img src="img/sprinter/arch.png" alt="Proposed system architecture of distributed printing." /></p>
+<div style="text-align:center">
+    <img src="../img/sprinter/arch.png" align="middle" width="50%" alt="" />
+    <figcaption><small>Proposed system architecture of distributed printing.</small></figcaption>
+</div>
 
 <h2 id="problem-definition">Problem Definition</h2>
 <p>The aim is to minimize the total printing cost, which is the maximum cost amongst all robots:
-[
-\text{minimize} \max (T_1, T_2, T_3, …, T_\mathcal{N})
-]</p>
+\(\text{minimize} \max (T_1, T_2, T_3, ..., T_\mathcal{N})\)</p>
 
 <h2 id="the-geodesic-image-cellularization-algorithm">The Geodesic Image Cellularization Algorithm</h2>
-<p>[
-\begin{align}
-\underset{\mu, W}{\text{minimize}} \quad &amp; \sum_{m=1}^{\mathcal{M}} \sum_{n=1}^{\mathcal{N}} W_{mn}(\frac{1}{2} |\mathrm{x}<em>m - \mu_n|^{2}</em>{2}) <br />
-\textrm{subject to} \quad &amp; \sum_{n=1}^{\mathcal{N}} W_{mn} = 1 , m = 1, …, \mathcal{M} <br />
-&amp; W_{mn} \geq 0, m = 1, …, \mathcal{M}; n = 1, …, \mathcal{N} <br />
-&amp; \sum_{m=1}^{\mathcal{M}} W_{mn} \geq \left \lfloor \frac{\mathcal{M}}{\mathcal{N}} \right \rfloor , n = 1, …, \mathcal{N}
-\end{align}
-]</p>
+<p>\(\begin{align}
+\underset{\mu, W}{\text{minimize}} \quad &amp; \sum_{m=1}^{\mathcal{M}} \sum_{n=1}^{\mathcal{N}} W_{mn}(\frac{1}{2} \|\mathrm{x}_m - \mu_n\|^{2}_{2}) \\
+\textrm{subject to} \quad &amp; \sum_{n=1}^{\mathcal{N}} W_{mn} = 1 , m = 1, ..., \mathcal{M} \\
+&amp; W_{mn} \geq 0, m = 1, ..., \mathcal{M}; n = 1, ..., \mathcal{N} \\
+&amp; \sum_{m=1}^{\mathcal{M}} W_{mn} \geq \left \lfloor \frac{\mathcal{M}}{\mathcal{N}} \right \rfloor , n = 1, ..., \mathcal{N}
+\end{align}\)</p>
 
 <h2 id="robot-design">Robot Design</h2>
-<p><img src="img/sprinter/exploded.png" alt="Exploded view of the SPRINTER robot." /></p>
+<div style="text-align:center">
+    <img src="../img/sprinter/exploded.png" align="middle" width="50%" alt="" />
+    <figcaption><small>Exploded view of the SPRINTER robot</small></figcaption>
+</div>
 
 <h2 id="experiments">Experiments</h2>
-<p><img src="img/sprinter/inkjet.gif" alt="Fire test of the inkjet cartridge driver." />
-<img src="img/sprinter/bot-fire-test.gif" alt="First power-on test of the robot." /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="../img/sprinter/inkjet.gif" alt="Fire test of the inkjet cartridge driver." /></th>
+      <th style="text-align: center"><img src="../img/sprinter/bot-fire-test.gif" alt="First power-on test of the robot." /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Fire test of the inkjet cartridge driver</td>
+      <td style="text-align: center">First power-on test of the robot</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="publications">Publications</h2>
 <ol>
   <li><a href="https://doi.org/10.1109/ICAR46387.2019.8981621">Karpe, K., Chatterjee, A., Srinivas, P., Samiappan, D., Ramamoorthy, K., Sabattini, L.: Sprinter: A discrete locomotion robot for precision swarm printing. In: 2019 19th International Conference on Advanced Robotics (ICAR), pp. 733–738. IEEE (2019)</a></li>
-  <li>Karpe, K., Sinha, A., Raorane, S. Chatterjee, A., Srinivas, P., Sabattini, L.: Towards Optimized Distributed Multi-Robot Printing: An Algorithmic Approach</li>
+  <li><a href="https://arxiv.org/abs/2102.12026">Karpe, K., Sinha, A., Raorane, S. Chatterjee, A., Srinivas, P., Sabattini, L.: Towards Optimized Distributed Multi-Robot Printing: An Algorithmic Approach</a></li>
 </ol>
 
 <h2 id="codebase">Codebase</h2>

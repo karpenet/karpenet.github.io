@@ -7,11 +7,16 @@ order: 4
 ---
 
 ## Introduction
-![Fire test of the inkjet cartridge driver.](img/mojo/mojo-testbed.jpg)
-![First power-on test of the robot.](img/mojo/mojo-tran.jpg)
 
-![The Mojo multi-robot testbed.](img/mojo/mojo-proposed.png)
-![The Mojo multi-robot testbed.](img/mojo/mojo-exp.png)
+![Robots in action on the testbed](../img/mojo/mojo-testbed.jpg) | ![Robots in formation control](../img/mojo/mojo-tran.jpg)
+:-------------------------:|:-------------------------:
+Robots in action on the testbed | Robots in formation control
 
-![Fire test of the inkjet cartridge driver.](img/mojo/mojo-parts.jpg)
-![First power-on test of the robot.](img/mojo/mojo-tracking.png)
+:-------------------------:|:-------------------------:
+![Formation control topology](../img/mojo/mojo-proposed.png) | ![Exploded view of robot's mechanical design](../img/mojo/mojo-exp.png)
+:-------------------------:|:-------------------------:
+Formation control topology | Exploded view of robot's mechanical design
+
+![Teardown of physical robot](../img/mojo/mojo-parts.jpg) | ![Robot homography tracking with AprilTags](../img/mojo/mojo-tracking.png)
+:-------------------------:|:-------------------------:
+Teardown of physical robot | Robot homography tracking with AprilTags
