@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Deepsort
-desc: Semantic Segmentation with Transformers
+desc: Multi Object Detection and Tracking
 favicon: "../img/deepsort.gif"
 order: 9
 ---
