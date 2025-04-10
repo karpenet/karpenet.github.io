@@ -3,7 +3,7 @@ layout: project
 title: F1TENTH
 desc: 1/10 Scale Autonomous Racing
 favicon: "../img/f1tenth.jpg"
-order: 6
+order: 7
 ---
 
 I will be writing about my learnings from and beyond the ESE 615: F1/10 Autonomous Racing course offered in Spring 2022.

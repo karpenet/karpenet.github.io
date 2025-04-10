@@ -3,7 +3,7 @@ layout: project
 title: Faster-RCNN
 desc: Towards Real-Time Object Detection with Region Proposal Networks
 favicon: "../img/faster-rcnn.png"
-order: 8
+order: 6
 ---
 
 ## Github Repository

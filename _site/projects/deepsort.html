@@ -62,9 +62,72 @@
 
         <section class="site-content">
             <div class="page-desc">
-                <h1>Deepsort: Semantic Segmentation with Transformers</h1>
+                <h1>Deepsort: Multi Object Detection and Tracking</h1>
                 <article class="project markdown-body">
-                    <p>WIP</p>
+                    <h2 id="what-is-deepsort">What is DeepSORT?</h2>
+<p>DeepSORT (Deep Simple Online and Realtime Tracking) is an advanced multi-object tracking algorithm that builds upon the SORT (Simple Online and Realtime Tracking) algorithm by incorporating deep learning for improved performance. It is designed to track multiple objects in real-time with high accuracy. The key components of DeepSORT are:</p>
+
+<ol>
+  <li>
+    <p><strong>Detection</strong>: Object detection is performed using a pre-trained deep learning model, such as YOLO or Faster R-CNN, to identify and locate objects in each frame of a video.</p>
+  </li>
+  <li>
+    <p><strong>Feature Extraction</strong>: For each detected object, a deep neural network is used to extract appearance features. These features help in distinguishing between different objects and maintaining consistent identities across frames.</p>
+  </li>
+  <li>
+    <p><strong>Kalman Filter</strong>: A Kalman filter is used to predict the future positions of the tracked objects based on their previous states. This helps in handling occlusions and maintaining smooth trajectories.</p>
+  </li>
+  <li>
+    <p><strong>Hungarian Algorithm</strong>: The Hungarian algorithm is used to solve the data association problem, matching detected objects with existing tracks based on their appearance features and predicted positions.</p>
+  </li>
+  <li>
+    <p><strong>Re-identification</strong>: DeepSORT includes a re-identification module that uses the extracted appearance features to re-identify objects that may have been lost due to occlusions or missed detections.</p>
+  </li>
+</ol>
+
+<p>By combining these components, DeepSORT achieves robust and accurate multi-object tracking in real-time applications.</p>
+
+<div style="text-align:center">
+    <img src="../img/deepsort.gif" width="40%" />
+    <figcaption>Fig: DeepSORT in action</figcaption>
+</div>
+
+<h2 id="how-can-we-optimize-deepsort-for-realtime">How can we Optimize DeepSORT for realtime?</h2>
+
+<h3 id="level-1-model-level-optimizations">Level 1: Model Level Optimizations</h3>
+<p>TensorRT optimizations provide significant performance improvements:</p>
+<ul>
+  <li>Graph mode execution</li>
+  <li>Fixed input size and batch size for predictable memory consumption</li>
+  <li>Targeted hardware optimizations for specific deployment platforms</li>
+  <li>Kernel fusion to reduce computational overhead</li>
+</ul>
+
+<h3 id="level-2-kernel-level-optimizations">Level 2: Kernel Level Optimizations</h3>
+<p>At the kernel level, two key approaches yield substantial performance gains:</p>
+
+<p><strong>Block Tiling</strong><br />
+Partitions data into smaller blocks to optimize memory access and parallel computation, improving cache efficiency and reducing redundant memory accesses.</p>
+
+<p><strong>Shared Memory</strong><br />
+Optimizes memory access patterns to improve cache efficiency and minimize redundant operations. The computational complexity is reduced from O(n²) to approximately O(1), where n is the number of unique detections.</p>
+
+<p>GPU acceleration shows significant latency reduction compared to CPU-only processing, maintaining consistent performance even as workload increases.</p>
+
+<h3 id="level-3-process-level-optimizations">Level 3: Process Level Optimizations</h3>
+<p><strong>Problem:</strong><br />
+For dense detections, inference latency drops over time due to increasing cost matrix size as the tracked detections buffer grows.</p>
+
+<p><strong>Solution:</strong></p>
+<ul>
+  <li>Implement a fixed-length LRU (Least Recently Used) cache for tracked detections</li>
+  <li>Remove stale detections as the buffer reaches capacity</li>
+  <li>Prevent the tracked detections buffer from growing unbounded, which stabilizes cost matrix computation</li>
+</ul>
+
+<p>This approach maintains consistent performance over time by controlling the computational complexity of the association step.</p>
+
+<p>Through these multi-level optimizations, DeepSORT can achieve real-time performance even on edge devices while maintaining tracking accuracy.</p>
 
                 </article>
             </div>
