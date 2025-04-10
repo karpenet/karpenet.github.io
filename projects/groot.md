@@ -3,7 +3,7 @@ layout: project
 title: Bimanual Manipulation with VLA
 desc: Finetuning GR00T N1 and Pi0
 favicon: "../img/groot/bimanual.gif"
-order: 10
+order: 11
 ---
 
 ## Project Overview

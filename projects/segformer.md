@@ -3,7 +3,7 @@ layout: project
 title: Segformer
 desc: Semantic Segmentation with Transformers
 favicon: "../img/segformer.gif"
-order: 9
+order: 10
 ---
 ## Github Repository
 [https://github.com/karpenet/Segformer](https://github.com/karpenet/Segformer)
